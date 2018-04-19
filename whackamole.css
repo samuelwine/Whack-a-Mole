@@ -1,0 +1,122 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: green;
+    height: 100%;
+}
+
+.game-container {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100% ;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+
+
+.row {
+    position: relative; 
+    display: table-row;
+    transform: translateX(3%)}
+
+.set {
+    position: relative;
+    display: table-cell;
+}
+
+.mole, .dirt {
+    position: absolute;
+}
+
+.mole {
+    left: 25%;
+}
+
+.dirt {
+    top: 50%;
+}
+
+.mole {
+    animation-duration: 1.95s;
+    animation-name: popup;
+    animation-timing-function: linear;
+}
+
+@keyframes popup {
+    from {
+        top: 15%;
+        transform: scale(0.75);
+    }
+  
+    75% {
+         top: 5%;
+        transform: scale(1);
+       }
+
+    95% {
+        top: 30%;
+       transform: scale(0.2);
+       visibility: hidden;
+
+      }
+    
+    to {
+        visibility: hidden;
+    }
+    
+  }
+
+.score {
+    position: absolute;
+    margin: 0px;
+    top: 1%;
+    left: 5%;
+    color: darkgreen;
+    -webkit-text-stroke-color: floralwhite;
+    -webkit-text-stroke-width: 0.25pt;
+    font-family: 'Fredoka One', cursive;
+
+}
+
+.missedMoles {
+    position: absolute;
+    margin: 0px;
+    top: 6%;
+    left: 5%;
+    color: darkgreen;
+    -webkit-text-stroke-color: floralwhite;
+    -webkit-text-stroke-width: 0.25pt;
+    font-family: 'Fredoka One', cursive;
+
+    ;
+
+}
+
+.gameName {
+    color: darkgreen;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 1px 0.5px 0px rgba(255,255,255,0.4);
+}
+
+.whack {
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    top: 5%;
+    font-size: 100pt;
+    text-align: center;
+}
+
+.amole {
+    position: absolute;
+    width: 100%;
+    margin: 0px;
+    top: 52%;
+    font-size: 100pt;
+    text-align: center;
+}
+
